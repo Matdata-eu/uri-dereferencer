@@ -1,6 +1,7 @@
 .git
 .gitignore
 *.md
+!THIRD_PARTY_NOTICES.md
 README
 .vscode
 .DS_Store
