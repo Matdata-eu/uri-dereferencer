@@ -7,6 +7,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY assets /usr/share/nginx/html/assets
 COPY vendor /usr/share/nginx/html/vendor
 COPY index.html /usr/share/nginx/html/
+COPY THIRD_PARTY_NOTICES.md /usr/share/nginx/html/assets/
 
 # Make js directory writable for config injection
 USER root
