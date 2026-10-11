@@ -1,0 +1,46 @@
+publiccodeYmlVersion: '0'
+name: URI Dereferencer
+url: https://github.com/Matdata-eu/uri-dereferencer
+platforms:
+- web
+- linux
+categories:
+- knowledge-management
+- data-visualization
+- geographic-information-systems
+developmentStatus: beta
+softwareType: standalone/web
+organisation:
+  uri: https://matdata.eu
+  name: Matdata
+intendedAudience:
+  scope:
+  - government
+  - science-and-technology
+  - infrastructures
+  - transportation
+description:
+  en:
+    shortDescription: Small nginx container that dereferences Linked Data URIs from any SPARQL endpoint.
+    longDescription: |
+      Publishing dereferenceable URIs usually means running a full Linked Data frontend. URI Dereferencer is one small nginx container that works with any SPARQL endpoint.
+
+      For each URI it runs a DESCRIBE query and renders an HTML page with a property table. WKT geometries are shown on a Leaflet map, with support for EWKT and common EPSG reference systems. Machine clients get Turtle, RDF/XML or JSON-LD through content negotiation. It lets a public administration make the identifiers of its datasets resolvable without building a custom website.
+    documentation: https://github.com/Matdata-eu/uri-dereferencer#readme
+    features:
+    - HTML pages for any URI in a SPARQL endpoint
+    - WKT geometries rendered on a Leaflet map
+    - Content negotiation for Turtle, RDF/XML and JSON-LD
+    - Configured with environment variables
+legal:
+  license: Apache-2.0
+  mainCopyrightOwner: Matdata
+maintenance:
+  type: internal
+  contacts:
+  - name: Mathias Vanden Auweele
+    affiliation: Matdata
+localisation:
+  localisationReady: false
+  availableLanguages:
+  - en
